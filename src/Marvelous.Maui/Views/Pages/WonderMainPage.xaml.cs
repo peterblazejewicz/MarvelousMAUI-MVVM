@@ -455,7 +455,7 @@ public partial class WonderMainPage : BaseContentPage
         navigationService.GoTo(PageType.MainMenuPage);
     }
 
-    private static async void MapTapped(object sender, TappedEventArgs e)
+    private async void MapTapped(object sender, TappedEventArgs e)
     {
         var bindable = sender as BindableObject;
         var viewModel = bindable.BindingContext as LocationWonderSectionViewModel;
