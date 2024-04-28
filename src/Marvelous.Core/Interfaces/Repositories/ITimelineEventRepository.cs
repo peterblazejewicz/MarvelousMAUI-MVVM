@@ -1,9 +1,8 @@
 ﻿using Marvelous.Core.Models;
 
-namespace Marvelous.Core.Interfaces.Repositories
+namespace Marvelous.Core.Interfaces.Repositories;
+
+public interface ITimelineEventRepository
 {
-    public interface ITimelineEventRepository
-    {
-        IList<TimelineEvent> GetGlobalEvents();
-    }
+    IList<TimelineEvent> GetGlobalEvents();
 }

@@ -1,10 +1,9 @@
 ﻿using Marvelous.Core.Models;
 
-namespace Marvelous.Core.Interfaces.Repositories
+namespace Marvelous.Core.Interfaces.Repositories;
+
+public interface IWonderRepository
 {
-    public interface IWonderRepository
-    {
-        Wonder GetWonder(WonderType wonder);
-        IList<Wonder> GetWonders();
-    }
+    Wonder GetWonder(WonderType wonder);
+    IList<Wonder> GetWonders();
 }

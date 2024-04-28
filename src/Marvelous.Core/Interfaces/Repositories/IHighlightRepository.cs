@@ -1,10 +1,9 @@
 ﻿using Marvelous.Core.Models;
 
-namespace Marvelous.Core.Interfaces.Repositories
+namespace Marvelous.Core.Interfaces.Repositories;
+
+public interface IHighlightRepository
 {
-    public interface IHighlightRepository
-    {
-        Highlight GetHighlight(string artifactId);
-        IList<Highlight> GetHighlights();
-    }
+    Highlight GetHighlight(string artifactId);
+    IList<Highlight> GetHighlights();
 }

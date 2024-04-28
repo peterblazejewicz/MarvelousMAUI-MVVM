@@ -1,7 +1,6 @@
-﻿namespace Marvelous.Core.Interfaces.Repositories
+﻿namespace Marvelous.Core.Interfaces.Repositories;
+
+public interface IUnsplashPhotoRepository
 {
-    public interface IUnsplashPhotoRepository
-    {
-        IDictionary<string, IList<string>> GetPhotosByCollectionId();
-    }
+    IDictionary<string, IList<string>> GetPhotosByCollectionId();
 }
